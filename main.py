@@ -5,7 +5,7 @@ import time
 abu = '\033[90m'
 r = '\033[0m'
 
-def rename_jpg_files_with_smooth_progress(folder_path):
+def main(folder_path):
     files = os.listdir(folder_path)
     jpg_files = [f for f in files if f.lower().endswith('.jpg')]
     jpg_files.sort()
@@ -31,4 +31,4 @@ def rename_jpg_files_with_smooth_progress(folder_path):
     print(f"\n{abu}semua file berhasil diubah namanya.{r}")
 
 folder = input(f"\n{abu}masukkan path folder: {r}")
-rename_jpg_files_with_smooth_progress(folder)
+main(folder)
