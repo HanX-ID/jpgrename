@@ -4,7 +4,7 @@ import time
 
 abu = '\033[90m'
 r = '\033[0m'
-
+ 
 def main(folder_path):
     files = os.listdir(folder_path)
     jpg_files = [f for f in files if f.lower().endswith('.jpg')]
